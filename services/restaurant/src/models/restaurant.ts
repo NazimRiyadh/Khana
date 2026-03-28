@@ -68,4 +68,5 @@ const schema = new Schema<IResturant>(
 
 schema.index({ autoLocation: "2dsphere" }); //used for nearby search
 
-export default mongoose.model<IResturant>("Restaurant", schema);
+const Restaurant = mongoose.model<IResturant>("Restaurant", schema);
+export default Restaurant;

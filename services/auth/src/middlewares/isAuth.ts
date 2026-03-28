@@ -12,6 +12,7 @@ export const isAuth = async (
   res: Response,
   next: NextFunction,
 ): Promise<void> => {
+  //doesn't matter we write promise<void> as by default async function returns promise
   try {
     const authHeader = req.headers.authorization;
 
